@@ -7,10 +7,10 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 17
+        minSdkVersion 16
         targetSdkVersion 28
-        versionCode 110
-        versionName "1.1"
+        versionCode 111
+        versionName "1.11"
         vectorDrawables.useSupportLibrary = true
         resourcePrefix 'Horizontal_Selector_'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
