@@ -13,9 +13,7 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:textSize="@dimen/horizontal_selector_text_size"
-        android:textColor="@color/horizontal_selector_button_color" />
+        android:layout_weight="0.6"/>
 
     <RelativeLayout
         android:id="@+id/container"
@@ -48,7 +46,8 @@
             android:layout_centerVertical="true"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:padding="@dimen/horizontal_selector_image_padding"/>
 
         <ImageButton
             android:id="@+id/next"
