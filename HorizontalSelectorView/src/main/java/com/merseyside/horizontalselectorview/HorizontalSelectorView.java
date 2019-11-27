@@ -1,4 +1,4 @@
-package com.vpnapp.upstream.horizontalselectorview;
+package com.merseyside.horizontalselectorview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -250,6 +250,10 @@ public class HorizontalSelectorView extends LinearLayout {
     public void updateLanguage(Context context) {
         this.context = context;
         fillView();
+    }
+
+    public void setTitle(String title) {
+        title_tw.setText(title);
     }
 
 }

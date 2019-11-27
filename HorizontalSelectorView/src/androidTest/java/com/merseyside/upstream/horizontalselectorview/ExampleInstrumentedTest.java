@@ -1,4 +1,4 @@
-package com.vpnapp.upstream.horizontalselectorview;
+package com.merseyside.horizontalselectorview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

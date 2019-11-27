@@ -1,16 +1,19 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = 'com.github.Merseyside'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 112
-        versionName "1.12"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 113
+        versionName "1.13"
         vectorDrawables.useSupportLibrary = true
         resourcePrefix 'Horizontal_Selector_'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -57,13 +60,17 @@ artifacts {
     archives javadocJar
 }
 
+ext {
+    appcompat = '1.1.0'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$appcompat"
+
+    implementation "androidx.core:core-ktx:+"
 }
 
 repositories {
